@@ -7,4 +7,10 @@ End Goal - display the database version string
 Analysis:
 
 (1) Determin no of colounms 
-' order by 1--
+' order by 3-- -> internal server error
+
+3-1 = 2
+
+(2) Determine the data types of the columns 
+
+' UNION SELECT '
