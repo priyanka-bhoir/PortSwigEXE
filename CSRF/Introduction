@@ -1,0 +1,34 @@
+# what is a CSRF
+
+``` csrf is an attack where the attacker causes the victim user to carry out an action unintentionally while that user is authenticated. 
+```
+
+# CSRF Conditions
+
+* For CSRF attack to be possible, three key condition must be in place:
+
+1. A relevent action
+2. Cookie-based session handling
+3. No unpredictable request parameters
+
+
+# Impact of CSRF Attacks
+
+* Depends on functionality in the application that is being exploited
+	** Confidentiality- it can be None / Partial(Low) / High
+	** Integrity - usually either Partial or High
+	** Availability - can be None / Partial(Low) / High
+* Remote Code execution on the server
+
+# How to find CSRF Vulnerabilities
+
+## White- Box Testing Perspective
+
+* Identify the framework that is being used by the application
+* Find out how this framework defends againse CSRF attacks
+* Review code to ensure taht the built in defences have not been disabled
+* Review all sensitive functionality to ensure that the CSRF defence has been applied
+
+# How to Exploit CSRF Vulnerablities
+
+ 
