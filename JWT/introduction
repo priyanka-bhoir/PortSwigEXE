@@ -1,0 +1,26 @@
+JWT - JSON web tokens
+
+used to send cyprographically signed data between systems
+
+
+# these contains 3 parts:
+	## header
+	## payload
+	## signature
+
+
+# what is jwt attack?
+
+JWT attack involve a user sending modified JWTs to the server in order to achive a malicious goal
+	-> goal was to bypass authentication and acess control
+
+
+
+# website to use
+	-: jwt.io
+	-: codechef		
+
+# extentions to be added
+
+	-: JWT editor
+	-: JSON web tokens	
